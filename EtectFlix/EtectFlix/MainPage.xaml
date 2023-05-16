@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Página Inicial"
+             x:Class="EtectFlix.MainPage"
+             BackgroundColor="#2f2f30">
+             
+
+    <StackLayout>
+        <Image x:Name="logo" HeightRequest="150" />
+
+        <ScrollView>
+            <Grid RowSpacing="20" ColumnSpacing="10" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0"
+                        Text="Aventura"
+                        Style="{ StaticResource ButtonVermelhoMenu}"
+                        Clicked="Btn_Open_Aventura"/>
+
+                <Button Grid.Row="0" Grid.Column="1"
+                        Text="Comedia"
+                        Style="{ StaticResource ButtonVermelhoMenu}"
+                        Clicked="Btn_Open_Comedia" />
+
+                <Button Grid.Row="1" Grid.Column="0"
+                        Text="Drama"
+                        Style="{ StaticResource ButtonVermelhoMenu}"
+                        Clicked="Btn_Open_Drama"/>
+
+                <Button Grid.Row="1" Grid.Column="1"
+                        Text="Terror"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="Btn_Open_Terror" />
+
+                <Button Grid.Row="2" Grid.Column="0"
+                        Text="Ficção Científica"
+                        Style="{StaticResource ButtonVermelhoMenu}"/>
+
+                <Button Grid.Row="2" Grid.Column="1"
+                        Text="Suspense"
+                        Style="{StaticResource ButtonVermelhoMenu}"/>
+
+                <Button Grid.Row="3" Grid.Column="0"
+                        Text="Infantil"
+                        Style="{StaticResource ButtonVermelhoMenu}"/>
+
+                <Button Grid.Row="3" Grid.Column="1"
+                        Text="Animação"
+                        Style="{StaticResource ButtonVermelhoMenu}"/>
+
+                <Button Grid.Row="4" Grid.Column="0"
+                        Text="Documentário"
+                        Style="{StaticResource ButtonVermelhoMenu}"/>
+
+                <Button Grid.Row="4" Grid.Column="1"
+                        Text="Guerra"
+                        Style="{StaticResource ButtonVermelhoMenu}"/>
+
+                <Button Grid.Row="5" Grid.Column="0"
+                        Text="Nacional"
+                        Style="{StaticResource ButtonVermelhoMenu}"/>
+
+                <Button Grid.Row="5" Grid.Column="1"
+                        Text="Romance"
+                        Style="{StaticResource ButtonVermelhoMenu}"/>
+
+            </Grid>
+        </ScrollView>
+
+    </StackLayout>
+
+</ContentPage>
