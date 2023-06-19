@@ -23,6 +23,7 @@ namespace EtectFlix.Categorias
 
             btnDemon.Source = ImageSource.FromResource("EtectFlix.Posters.DemonSlayer.jpg");
             btnMyhero.Source = ImageSource.FromResource("EtectFlix.Posters.MyHero.jpg");
+            btnSailor.Source = ImageSource.FromResource("EtectFlix.Posters.sailormoon.jpg");
         }
 
 
@@ -46,6 +47,17 @@ namespace EtectFlix.Categorias
             }catch (Exception ex)
             {
                 await DisplayAlert("Ops, ocorreu um erro... \n", ex.Message, "Ok");
+            }
+        }
+
+        private async void btnSailor_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new SailorMoon());
+            }catch(Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um eroo... \n", ex.Message, "Ok");
             }
         }
     }

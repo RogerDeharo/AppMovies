@@ -15,6 +15,10 @@ namespace EtectFlix.Filmes
 		public Suzume ()
 		{
 			InitializeComponent ();
-		}
+			NavigationPage.SetHasNavigationBar(this, false);
+
+            logo.Source = ImageSource.FromResource("EtectFlix.Img.logo.png");
+			poster.Source = ImageSource.FromResource("EtectFlix.Posters.suzume-poster.jpg");
+        }
 	}
 }

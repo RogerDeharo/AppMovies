@@ -15,6 +15,10 @@ namespace EtectFlix.Filmes
         public Hellsing()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+
+            logo.Source = ImageSource.FromResource("EtectFlix.Img.logo.png");
+            poster.Source = ImageSource.FromResource("EtectFlix.Posters.Hellsing.jpg");
         }
     }
 }

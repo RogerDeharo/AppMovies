@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EtectFlix.Filmes.Hallowen"
+             BackgroundColor="#2f2f30">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <WebView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                     x:Name="visualizador"
+                     VerticalOptions="FillAndExpand"
+                     BackgroundColor="#2f2f30" 
+                     Source="https://www.youtube.com/embed/HJROLf3diP4"/>
+
+                <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                    <ScrollView>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="300" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="poster" Grid.Row="0" Grid.Column="0" Aspect="AspectFill" />
+
+                            <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="Center">
+                                <Label Text="TÍTULO" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="Hallowen" Style="{StaticResource LabelTextoBranco}"/>
+                                <Label Text="LANÇAMENTO" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="13 de outubro de 2022" Style="{StaticResource LabelTextoBranco}"/>
+                                <Label Text="Diretor" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="David Gordon Green" Style="{StaticResource LabelTextoBranco}"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Padding="10">
+                                <Label Text="SINOPSE" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="Depois de seu último encontro com Michael Myers, Laurie Strode finalmente decide se libertar e abraçar a vida. No entanto, um assassinato local desencadeia uma onda de violência e terror, forçando-a a enfrentar o mal que ela não pode controlar." Style="{StaticResource LabelTextoBranco}"/>
+                            </StackLayout>
+                        </Grid>
+                    </ScrollView>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

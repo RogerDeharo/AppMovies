@@ -33,6 +33,11 @@
                              Style="{StaticResource ButtonPosters}"
                              Clicked="btnMyhero_Clicked"/>
 
+                <ImageButton Grid.Row="1" Grid.Column="0"
+                             x:Name="btnSailor"
+                             Style="{StaticResource ButtonPosters}"
+                             Clicked="btnSailor_Clicked"/>
+
             </Grid>
         </ScrollView>
     </StackLayout>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EtectFlix.Filmes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace EtectFlix.Categorias
 		public Guerra ()
 		{
 			InitializeComponent ();
-		}
-	}
+            NavigationPage.SetHasNavigationBar(this, false);
+
+            logo.Source = ImageSource.FromResource("EtectFlix.Img.logo.png");
+
+
+        }
+
+    }
 }

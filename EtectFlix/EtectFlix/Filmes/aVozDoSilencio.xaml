@@ -1,12 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EtectFlix.Filmes.aVozDoSilencio">
+             x:Class="EtectFlix.Filmes.aVozDoSilencio"
+             BackgroundColor="#2f2f30">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical">
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <WebView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                     x:Name="visualizador"
+                     VerticalOptions="FillAndExpand"
+                     BackgroundColor="#2f2f30" 
+                     Source="https://www.youtube.com/embed/nfK6UgLra7g"/>
+
+                <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                    <ScrollView>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="300" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="poster" Grid.Row="0" Grid.Column="0" Aspect="AspectFill" />
+
+                            <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="Center">
+                                <Label Text="TÍTULO" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="Koe No Katachi" Style="{StaticResource LabelTextoBranco}"/>
+                                <Label Text="LANÇAMENTO" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="17 de setembro de 2016" Style="{StaticResource LabelTextoBranco}"/>
+                                <Label Text="STUDIO DE ANIMAÇÃO" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="Kyoto Animation" Style="{StaticResource LabelTextoBranco}"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Padding="10">
+                                <Label Text="SINOPSE" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="Como um jovem selvagem, o estudante do ensino fundamental Shouya Ishida procurou vencer o tédio das maneiras mais cruéis. Quando o surdo Shouko Nishimiya se transfere para sua classe, Shouya e o resto de sua classe a intimidam sem pensar para se divertir. No entanto, quando sua mãe notifica a escola, ele é apontado e culpado por tudo o que foi feito a ela. Com Shouko saindo da escola, Shouya fica à mercê de seus colegas. Ele é impiedosamente condenado ao ostracismo durante todo o ensino fundamental e médio, enquanto os professores fecham os olhos.
+
+Agora em seu terceiro ano do ensino médio, Shouya ainda é atormentado por seus erros quando menino. Lamentando sinceramente suas ações passadas, ele parte em uma jornada de redenção: para encontrar Shouko mais uma vez e fazer as pazes.
+
+Koe no Katachi conta a história comovente do reencontro de Shouya com Shouko e suas tentativas honestas de se redimir, enquanto é continuamente assombrado pelas sombras de seu passado." Style="{StaticResource LabelTextoBranco}"/>
+                            </StackLayout>
+                        </Grid>
+                    </ScrollView>
+                </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

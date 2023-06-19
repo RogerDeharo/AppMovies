@@ -44,36 +44,52 @@
                         Clicked="Btn_Open_Terror" />
 
                 <Button Grid.Row="2" Grid.Column="0"
+                        x:Name="btnFc"
                         Text="Ficção Científica"
-                        Style="{StaticResource ButtonVermelhoMenu}"/>
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="btnFc_Clicked"/>
 
                 <Button Grid.Row="2" Grid.Column="1"
+                        x:Name="btnSus"
                         Text="Suspense"
-                        Style="{StaticResource ButtonVermelhoMenu}"/>
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="btnSus_Clicked"/>
 
                 <Button Grid.Row="3" Grid.Column="0"
+                        x:Name="btnInfantil"
                         Text="Infantil"
-                        Style="{StaticResource ButtonVermelhoMenu}"/>
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="btnInfantil_Clicked"/>
 
                 <Button Grid.Row="3" Grid.Column="1"
+                        x:Name="btnAni"
                         Text="Animação"
-                        Style="{StaticResource ButtonVermelhoMenu}"/>
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="btnAni_Clicked"/>
 
                 <Button Grid.Row="4" Grid.Column="0"
+                        x:Name="btnDocu"
                         Text="Documentário"
-                        Style="{StaticResource ButtonVermelhoMenu}"/>
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="btnDocu_Clicked"/>
 
                 <Button Grid.Row="4" Grid.Column="1"
+                        x:Name="btnGuerra"
                         Text="Guerra"
-                        Style="{StaticResource ButtonVermelhoMenu}"/>
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="Btn_Open_Guerra"/>
 
                 <Button Grid.Row="5" Grid.Column="0"
+                        x:Name="btnNacional"
                         Text="Nacional"
-                        Style="{StaticResource ButtonVermelhoMenu}"/>
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="btnNacional_Clicked"/>
 
                 <Button Grid.Row="5" Grid.Column="1"
+                        x:Name="btnRomance"
                         Text="Romance"
-                        Style="{StaticResource ButtonVermelhoMenu}"/>
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="btnRomance_Clicked"/>
 
             </Grid>
         </ScrollView>

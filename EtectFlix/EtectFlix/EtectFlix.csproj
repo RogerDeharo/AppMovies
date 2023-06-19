@@ -13,11 +13,18 @@
   <ItemGroup>
     <None Remove="Img\logo.png" />
     <None Remove="Posters\DemonSlayer.jpg" />
+    <None Remove="Posters\download %281%29.jpg" />
+    <None Remove="Posters\download.jpg" />
+    <None Remove="Posters\gente-grande-2-capa.jpg" />
+    <None Remove="Posters\gente_grande.jpg" />
     <None Remove="Posters\Guardioes.jpg" />
+    <None Remove="Posters\Hallowen.jpg" />
     <None Remove="Posters\Hellsing.jpg" />
     <None Remove="Posters\Koe-no-Katachi-poster-film.jpg" />
     <None Remove="Posters\MyHero.jpg" />
     <None Remove="Posters\sailor-moon-eternal-o-filme-poster.jpg" />
+    <None Remove="Posters\sailormoon.jpg" />
+    <None Remove="Posters\Smile.jpg" />
     <None Remove="Posters\suzume-poster-724x1024.jpg" />
     <None Remove="Posters\suzume-poster.jpg" />
     <None Remove="Posters\ViagemDeChihiro.jpg" />
@@ -38,7 +45,16 @@
     <EmbeddedResource Include="Posters\DemonSlayer.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Posters\gente-grande-2-capa.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\gente_grande.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Posters\Guardioes.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\Hallowen.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Posters\Hellsing.jpg">
@@ -50,7 +66,10 @@
     <EmbeddedResource Include="Posters\MyHero.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Posters\sailor-moon-eternal-o-filme-poster.jpg">
+    <EmbeddedResource Include="Posters\sailormoon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\Smile.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Posters\suzume-poster.jpg">
@@ -115,7 +134,16 @@
     <EmbeddedResource Update="Filmes\DemonSlayer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Filmes\GenteGrande1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Filmes\GenteGrande2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Filmes\GuardiõesDaGalaxia.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Filmes\Hallowen.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Filmes\Hellsing.xaml">
@@ -125,6 +153,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Filmes\SailorMoon.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Filmes\Smile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Filmes\Suzume.xaml">

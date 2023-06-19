@@ -20,9 +20,7 @@ namespace EtectFlix.Filmes
             logo.Source = ImageSource.FromResource("EtectFlix.Img.logo.png");
             poster.Source = ImageSource.FromResource("EtectFlix.Posters.DemonSlayer.jpg");
 
-            var htmlSource = new HtmlWebViewSource();
-            htmlSource.Html = @"<iframe width=""410"" height=""310"" src=""https://www.youtube.com/embed/YhrA6hjQbTw"" title=""YouTube video player"" frameborder=""0"" allow=""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"" allowfullscreen></iframe>";
-            visualizador.Source = htmlSource;
+            
         }
     }
 }

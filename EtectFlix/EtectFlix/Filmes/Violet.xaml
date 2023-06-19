@@ -1,12 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EtectFlix.Filmes.Violet">
+             x:Class="EtectFlix.Filmes.Violet"
+             BackgroundColor="#2f2f30">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical">
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <WebView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                     x:Name="visualizador"
+                     VerticalOptions="FillAndExpand"
+                     BackgroundColor="#2f2f30" 
+                     Source="https://www.youtube.com/embed/R5xn78CR96M"/>
+
+                <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                    <ScrollView>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="300" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="poster" Grid.Row="0" Grid.Column="0" Aspect="AspectFill" />
+
+                            <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="Center">
+                                <Label Text="TÍTULO" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="Violet Evergarden" Style="{StaticResource LabelTextoBranco}"/>
+                                <Label Text="LANÇAMENTO" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="Sep 18, 2020" Style="{StaticResource LabelTextoBranco}"/>
+                                <Label Text="STUDIO DE ANIMAÇÃO" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="Kyoto Animation" Style="{StaticResource LabelTextoBranco}"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Padding="10">
+                                <Label Text="SINOPSE" Style="{StaticResource LabelTextoVermelho}"/>
+                                <Label Text="Vários anos se passaram desde o fim da Grande Guerra. À medida que a torre de rádio em Leidenschaftlich continua a ser construída, os telefones logo se tornarão mais relevantes, levando a um declínio na demanda por bonecos de memória automática. Mesmo assim, Violet Evergarden continua a ganhar fama após seu constante sucesso em escrever cartas. No entanto, às vezes, a única coisa que você deseja é a única coisa que não aparece.
+
+Violet Evergarden Movie segue Violet enquanto ela continua a compreender o conceito de emoção e o significado do amor. Ao mesmo tempo, ela persegue um vislumbre de esperança de que o homem que uma vez lhe disse eu te amo ainda esteja vivo mesmo depois de muitos anos que se passaram." Style="{StaticResource LabelTextoBranco}"/>
+                            </StackLayout>
+                        </Grid>
+                    </ScrollView>
+                </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
